@@ -9,6 +9,12 @@
 
             const ROUND_COUNT = 5;
             const VALUES = ["rock", "paper", "scissors"];
+
+            // Check for valid choice of play
+            function validateChoice(choice) {
+                return VALUES.includes(choice);
+            }
+
             // Randomly selects a choice from a string list.
             function turnComputer() {
                 let values = ["rock","paper","scissors"];
