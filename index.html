@@ -34,14 +34,15 @@
             }
 
             // takes two choices as strings values and returns who the winner is
-            function compareChoices(p1_choice,p2_choice) {
+            function compareChoices(p1_choice, p2_choice) {
+
                 if (p1_choice == p2_choice) {
                     return "tie";
                 } else if (
                     (p1_choice == "rock" && p2_choice == "scissors") ||
                     (p1_choice == "paper" && p2_choice == "rock") ||
                     (p1_choice == "scissors" && p2_choice == "paper")
-                    ) {
+                ) {
                     return "p1"
                 } else {
                     return "p2";
