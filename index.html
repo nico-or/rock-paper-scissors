@@ -6,7 +6,6 @@
     </head>
     <body>
         <script>
-
             const ROUND_COUNT = 5;
             const VALUES = ["rock", "paper", "scissors"];
 
@@ -23,9 +22,7 @@
             // Player turn.
             // Includes validation for input.
             function turnPlayer() {
-
                 let p_choice = prompt("Choose your play").toLowerCase().trim();
-
                 while (validateChoice(p_choice) == false) {
                     p_choice = prompt("Invalid choice. Try again").toLowerCase().trim();
                 }
@@ -35,7 +32,6 @@
 
             // takes two choices as strings values and returns who the winner is
             function compareChoices(p1_choice, p2_choice) {
-
                 if (p1_choice == p2_choice) {
                     return "tie";
                 } else if (
@@ -43,14 +39,14 @@
                     (p1_choice == "paper" && p2_choice == "rock") ||
                     (p1_choice == "scissors" && p2_choice == "paper")
                 ) {
-                    return "p1"
+                    return "p1";
                 } else {
                     return "p2";
                 }
             }
 
             function fullGame() {
-
+                
                 // variables to store game scores
                 let pc_score = 0;
                 let py_score = 0;
@@ -84,11 +80,11 @@
                         rounds++;
                         console.log("You win the round");
                     }
-
                     console.log(`Scores\n--------------\nPlayer:   ${py_score}\nComputer: ${pc_score}\n--------------`);
                 }
-
-                console.log("End of the Game.")
+                
+                console.log("End of the Game.");
+                
                 if (pc_score > py_score) {
                     console.log("Computer Wins.");
                 } else {
