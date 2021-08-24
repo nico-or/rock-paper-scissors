@@ -1,0 +1,19 @@
+div .centered {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#title {
+    margin-bottom: 2em;
+    background-color: mediumseagreen;
+}
+
+#scoreboard {
+    margin-bottom: 1em;
+    background-color:palevioletred;
+}
+
+#playarea {
+    background-color: lightskyblue;
+}
