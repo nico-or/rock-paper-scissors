@@ -1,7 +1,7 @@
-div .centered {
+.centered {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 #title {
