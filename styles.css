@@ -17,3 +17,17 @@ div .centered {
 #playarea {
     background-color: lightskyblue;
 }
+
+.profile-background {
+    background-color: red;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-icon {
+}
