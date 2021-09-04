@@ -40,3 +40,14 @@
     justify-content: center;
     align-items: center;
 }
+
+#choice-display{
+    margin: 0 1em;
+    font-size: large;
+}
+.playerchoice{
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px 30px;
+    margin: 10px;
+}
