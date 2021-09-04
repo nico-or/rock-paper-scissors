@@ -4,17 +4,17 @@
     justify-content: center;
 }
 
-#title {
+#area-title {
     margin-bottom: 2em;
     background-color: mediumseagreen;
 }
 
-#scoreboard {
+#area-scoreboard {
     margin-bottom: 1em;
     background-color:palevioletred;
 }
 
-#playarea {
+#area-playarea {
     background-color: lightskyblue;
 }
 
