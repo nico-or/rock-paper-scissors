@@ -14,6 +14,16 @@
     margin-bottom: 1em;
     background-color:palevioletred;
 }
+#scoreboard {
+    font-size: large;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+.score-counter{
+    padding: 5px 20px;
+}
 
 #area-playarea {
     background-color: lightskyblue;
