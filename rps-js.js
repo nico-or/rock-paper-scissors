@@ -17,14 +17,17 @@ p1s = document.querySelector("#p1-scissors");
 // button functionality
 p1r.addEventListener('click', function(){
     p1Display.textContent = "rock"
+    playRound("rock")
 })
 
 p1p.addEventListener('click', function(){
     p1Display.textContent = "paper"
+    playRound("paper")
 })
 
 p1s.addEventListener('click', function(){
     p1Display.textContent = "scissors"
+    playRound("scissors")
 })
 
 // Randomly selects a choice from a string list.
@@ -44,5 +47,18 @@ function compareChoices(p1_choice, p2_choice) {
         return "p1";
     } else {
         return "p2";
+    }
+}
+
+// single game round. triggered on click
+function playRound(p1_choice) {
+    p2_choice = turnComputer();
+    p2Display.textContent = p2_choice;
+
+    let outcome = compareChoices(p1_choice,p2_choice)
+    if (outcome == "p1"){
+        ++p1ScoreDisp.textContent;
+    } else if (outcome == "p2") {
+        ++p2ScoreDisp.textContent;
     }
 }
