@@ -58,7 +58,21 @@ function playRound(p1_choice) {
     let outcome = compareChoices(p1_choice,p2_choice)
     if (outcome == "p1"){
         ++p1ScoreDisp.textContent;
+        if (p1ScoreDisp.textContent == ROUND_COUNT) {
+            endGame("p1")
+        }
     } else if (outcome == "p2") {
         ++p2ScoreDisp.textContent;
+        if (p2ScoreDisp.textContent == ROUND_COUNT) {
+            endGame("p2")
+        }
+    }
+}
+
+function endGame(winner) {
+    if (winner == "p1") {
+        message = "You Win."
+    } else {
+        message = "You Lose."
     }
 }
