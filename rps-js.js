@@ -11,17 +11,6 @@ function turnComputer() {
     return VALUES[Math.floor(Math.random()*3)];
 }
 
-// Player turn.
-// Includes validation for input.
-function turnPlayer() {
-    let p_choice = prompt("Choose your play").toLowerCase().trim();
-    while (validateChoice(p_choice) == false) {
-        p_choice = prompt("Invalid choice. Try again").toLowerCase().trim();
-    }
-
-    return p_choice;
-}
-
 // takes two choices as strings values and returns who the winner is
 function compareChoices(p1_choice, p2_choice) {
     if (p1_choice == p2_choice) {
