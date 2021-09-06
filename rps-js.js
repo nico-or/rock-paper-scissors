@@ -1,6 +1,18 @@
 const ROUND_COUNT = 5;
 const VALUES = ["rock", "paper", "scissors"];
 
+// score display elemets
+p1ScoreDisp = document.querySelector("#score-player1");
+p2ScoreDisp = document.querySelector("#score-player2");
+
+// player selection display element
+p1Display = document.querySelector("#choice-player1");
+p2Display = document.querySelector("#choice-player2");
+
+// player 1 choice buttons
+p1r = document.querySelector("#p1-rock");
+p1p = document.querySelector("#p1-paper");
+p1s = document.querySelector("#p1-scissors");
 
 // Randomly selects a choice from a string list.
 function turnComputer() {
