@@ -12,6 +12,10 @@ body {
     flex-direction: column;
 }
 
+.capitalize {
+    text-transform: capitalize;
+}
+
 .title-wrapper {
     font-size: 32px;
     margin-top: 1em;
