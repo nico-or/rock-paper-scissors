@@ -75,4 +75,7 @@ function endGame(winner) {
     } else {
         message = "You Lose."
     }
+
+    const outcome = document.querySelector('#outcome');
+    outcome.textContent = message;
 }
