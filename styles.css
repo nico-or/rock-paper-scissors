@@ -24,21 +24,31 @@ body {
     border-radius: 0.5em;
 }
 
-#area-scoreboard {
+.scoreboard-wrapper {
+    font-size: 24px;
     margin-bottom: 1em;
-    background-color:palevioletred;
 }
 
-#scoreboard {
-    font-size: large;
+.scoreboard {
+    background-color:palevioletred;
+    padding: 0.5em 4em;
+    border-radius: 0.5em;
+}
+
+.scoreboard-wrapper .title {
+    margin-bottom: 0.5em;
+}
+
+.display {
+    font-size: 18px;
     color: white;
     background-color: black;
     border-radius: 10px;
-    margin-bottom: 1em;
+    padding: 1em 0;
 }
 
 .score-counter{
-    padding: 5px 20px;
+    padding: 0 2em;
 }
 
 #area-playarea {
