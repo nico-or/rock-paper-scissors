@@ -1,12 +1,11 @@
 .centered {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
 #area-title {
-    margin-bottom: 2em;
+    margin-bottom: 1em;
     background-color: mediumseagreen;
 }
 
@@ -14,6 +13,7 @@
     margin-bottom: 1em;
     background-color:palevioletred;
 }
+
 #scoreboard {
     font-size: large;
     color: white;
@@ -21,6 +21,7 @@
     border-radius: 10px;
     margin-bottom: 1em;
 }
+
 .score-counter{
     padding: 5px 20px;
 }
@@ -45,6 +46,7 @@
     margin: 0 1em;
     font-size: large;
 }
+
 .playerchoice {
     background-color: white;
     border-radius: 20px;
