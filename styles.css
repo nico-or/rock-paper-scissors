@@ -8,6 +8,10 @@ body {
     align-items: center;
 }
 
+.column {
+    flex-direction: column;
+}
+
 .title-wrapper {
     font-size: 32px;
     margin-top: 1em;
