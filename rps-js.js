@@ -10,25 +10,14 @@ p1Display = document.querySelector("#choice-player1");
 p2Display = document.querySelector("#choice-player2");
 
 // player 1 choice buttons
-p1r = document.querySelector("#p1-rock");
-p1p = document.querySelector("#p1-paper");
-p1s = document.querySelector("#p1-scissors");
+p1 = document.querySelectorAll(".p1-button");
 
 // button functionality
-p1r.addEventListener('click', function(){
-    p1Display.textContent = "rock"
-    playRound("rock")
-})
-
-p1p.addEventListener('click', function(){
-    p1Display.textContent = "paper"
-    playRound("paper")
-})
-
-p1s.addEventListener('click', function(){
-    p1Display.textContent = "scissors"
-    playRound("scissors")
-})
+p1.forEach(button => {
+    button.addEventListener('click', e => {
+        playRound(e.target.textContent)
+    })
+});
 
 // Randomly selects a choice from a string list.
 function turnComputer() {
@@ -53,6 +42,8 @@ function compareChoices(p1_choice, p2_choice) {
 // single game round. triggered on click
 function playRound(p1_choice) {
     p2_choice = turnComputer();
+    
+    p1Display.textContent = p1_choice;
     p2Display.textContent = p2_choice;
 
     let outcome = compareChoices(p1_choice,p2_choice)
